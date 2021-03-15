@@ -16,5 +16,57 @@ body{
     background-color: #d71e2b;
 }
 
-/* ******************** Logo Div starts here ******************** */
+/* ******************** Logo Div & navBars starts here ******************** */
 
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #d71e2b;
+    position: relative;
+    border-bottom: solid 1px rgb(209, 162, 33);
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    color: white !important;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: rgb(250, 250, 250);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #d71e2b;
+    border: solid 1px rgba(238, 229, 229, 0.185);
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-bottom: 14.8px;
+  }
+
+  #logoText{
+      color: black;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #f8faf8;
+    color: white;
+  }
+  
