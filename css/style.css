@@ -1,3 +1,7 @@
+:root {
+    --myfont:Arial, Helvetica, sans-serif;
+  }
+
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -8,6 +12,7 @@ body{
     background-color: white;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .top-display{
@@ -17,19 +22,31 @@ body{
 }
 
 /* ******************** Logo Div & navBars starts here ******************** */
+.Idesknav{
+    display: none;
+}
+
 
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
     background-color: #d71e2b;
     position: relative;
-    border-bottom: solid 1px rgb(209, 162, 33);
+    border-bottom: solid 1px #d71e2b;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
     color: white !important;
+  }
+
+  #holder{
+      border: solid  0px black;
+      width: 100px;
+      height: 40px;
+      position: relative;
+      bottom: 13px;
   }
   
   /* Style navigation menu links */
@@ -52,11 +69,23 @@ body{
     right: 0;
     top: 0;
     padding-bottom: 14.8px;
+    height: 13px;
   }
 
   #logoText{
       color: black;
   }
+
+  
+.active img{
+    /* max-width: 100%; */
+    max-height: 70px;
+    width: 100px;
+    height:50px;
+    position: relative;
+    bottom: 5px;
+
+}
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
@@ -68,5 +97,253 @@ body{
   .active {
     background-color: #f8faf8;
     color: white;
+    height: 16px;
+  }
+
+  .searchInput{
+      display: none;
   }
   
+  
+.hide{
+    display: none !important;
+}
+
+
+
+
+
+
+  /**********Tablet designs starts here**********/
+
+  @media  (min-width:768px) and (max-width:1024px) {
+.topnav{
+    display: none;
+}
+
+.top-display{
+    width: 100%;
+    height: 10px;
+    background-color: #d71e2b;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d71e2b;
+}
+
+.Idesknav{
+    border: solid 1px red;
+    border-left: none;
+    border-right: none;
+    height: 60px;
+    display: block;
+    display: flex;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+
+.logoDiv{
+    
+    width: 200px;
+    height: auto;
+     border: solid 1px black;
+}
+
+.logoDiv img{
+    /* max-width: 100%; */
+    max-height: 70px;
+    width: 150px;
+    height:100px;
+    position: relative;
+    bottom: 5px;
+
+}
+
+.navDiv{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    /* background-color: #d71e2b; */
+    width: 65%;
+    justify-content:space-between;
+    margin-right: 100px;
+    margin-top: 5px;
+    height: 50px;
+    border: solid 0px black;
+}
+
+.navDiv ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+padding-right: 0px;
+}
+.navbar{
+
+
+}
+.navDiv a{
+text-decoration: none;
+color: rgb(24, 23, 23);
+font-family: var(--myfont);
+}
+
+.navDiv a:hover{
+text-decoration: underline;
+}
+
+/* Search icon starts here */
+#search{
+    color: #d71e2b;
+    position:absolute;
+    right:20px;
+    bottom: 7px;
+
+}
+.Isize{
+    font-size: 1.6em !important;
+}
+
+.searchInput{
+    display: none;
+}
+/* 
+.searchInput{
+   display: block;
+   position: absolute;
+   right: 0;
+   margin-top:5px;
+   margin-right:5px;
+   outline: none;
+   outline-style: none;
+   border-radius: 5px;
+
+}
+
+.searchInput input{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    outline-style: none;
+}
+
+.hide{
+        display: none;
+}
+
+
+
+ */
+
+  }
+
+
+
+
+  /**********Desktop designs starts here**********/
+  
+  @media  (min-width:1024px){
+    .topnav{
+        display: none;
+    }
+    
+    .Idesknav{
+        border: solid 1px red;
+        height: 70px;
+        display: flex;
+        font-size: 1.2rem;
+        position: relative;
+        
+}
+.logoDiv img{
+    display: none;
+}
+
+.logoDiv{
+    background-image: url(../images/Logoimage.png);
+        width: 200px;
+        height: 70px;
+        border: solid 0px black;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-clip: content-box;
+        background-position-y:-7px ;
+        box-sizing: border-box;
+        /* background-color: #d71e2b; */
+}
+
+/* .logoDiv img{
+    border: solid 1px black;
+    height: 90vh;
+} */
+
+.navDiv{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    /* background-color: #d71e2b; */
+    width: 60%;
+    margin-right: 200px;
+    height: auto;
+    border: solid 0px black;
+    top: 5px;
+}
+
+.navDiv ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.navbar:hover {
+    transform: translateY(-4px);
+    
+}
+.navDiv a{
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+    font-family: var(--myfont);
+}
+
+.navDiv a:hover{
+   text-decoration: underline;
+}
+
+
+/* Search icon starts here */
+#search{
+    color: #d71e2b;
+    position:absolute;
+    right: 38px;
+    bottom: 8px;
+
+}
+.Isize{
+    font-size: 2em !important;
+}
+.Isize:hover{
+    transform: translateY(-4px);
+}
+.searchInputShow{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top:5px;
+    margin-right:5px;
+    outline: none;
+    outline-style: none;
+    border-radius: 5px;
+ 
+ }
+ 
+ .searchInput input{
+     border-radius: 10px;
+     padding: 10px;
+     font-size: 1.1em;
+     outline-style: none;
+     border: solid 2px #d71e2b;
+ }
+
+  
+
+
+
+}

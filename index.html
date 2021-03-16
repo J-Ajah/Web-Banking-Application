@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/719954d4ba.js" crossorigin="anonymous"></script>
     <title>IceBank</title>
 </head>
 <body>
@@ -13,18 +14,53 @@
 
             <!-- Top Navigation Menu -->
             <div class="topnav">
-                <a href="#home" class="active"> <b id="logoText">IceBank</b> </a>
+                <a href="#home" class="active">  <div id="holder"><img src="images/Logoimage.png" alt="">   </div>  </a>
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#news">Home</a>
+                <a href="#contact">About</a>
+                <a href="#about">Product & Services</a>
                 </div>
                 <!-- "menu for toggling" -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
                 </a>
             </div>
+
+            <!-- Ipad & Desktop navBar starts here -->
+            <div class="Idesknav">
+                <div class="logoDiv">
+
+                    <img src="images/Logoimage.png" alt="">
+                </div>
+
+                <div class="navDiv">
+                   <ul>
+                    <li class="navbar"> <a href="">Home</a> </li>
+                    <li class="navbar"><a href="">About</a> </li>
+                    <li class="navbar"> <a href="">Product & Services</a> </li>
+                    <li class="navbar"> <a href="">E Banking</a> </li>
+                    <li class="navbar"> <a href="">Contact</a> </li>
+                   </ul>
+                </div>
+
+                <div id="search">
+                    <p><a href=""><i class="fa fa-search  fa-loaded Isize" id="search"></i> </a>
+                </div>
+
+            </div>
+<!-- 
+            <div class="searchInput" id="txtbox">
+                <input type="text" name="search" id="searchTextBox" placeholder = "Enter text">
+
+            </div> -->
+             <!-- Ipad & Desktop navBar ends here -->
+
+
+             <!-- Slides show starts here -->
+
+
+
 
       </div>
       <script src="javascript/index.js"></script>
