@@ -17,9 +17,11 @@
                 <a href="#home" class="active">  <div id="holder"><img src="images/Logoimage.png" alt="">   </div>  </a>
                 <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
-                <a href="#news">Home</a>
-                <a href="#contact">About</a>
-                <a href="#about">Product & Services</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Product & Services</a>
+                <a href="Ebanking.html">E Banking</a>
+                <a href="contact.html">E Banking</a>
                 </div>
                 <!-- "menu for toggling" -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -36,11 +38,11 @@
 
                 <div class="navDiv">
                    <ul>
-                    <li class="navbar"> <a href="">Home</a> </li>
-                    <li class="navbar"><a href="">About</a> </li>
-                    <li class="navbar"> <a href="">Product & Services</a> </li>
-                    <li class="navbar"> <a href="">E Banking</a> </li>
-                    <li class="navbar"> <a href="">Contact</a> </li>
+                    <li class="navbar"> <a href="index.html" class="active">Home</a> </li>
+                    <li class="navbar"><a href="about.html">About</a> </li>
+                    <li class="navbar"> <a href="products.html">Product & Services</a> </li>
+                    <li class="navbar"> <a href="Ebanking.html">E Banking</a> </li>
+                    <li class="navbar"> <a href="contact.html">Contact</a> </li>
                    </ul>
                 </div>
 
@@ -68,30 +70,22 @@
                             <img src="images/cards.jpg">
                             <!-- <div class="join"> Join us now</div> -->
                             <div class="text"> 
+                                <div style="margin-top: -10px;">
                                 <h3><b>Simplify your life</b> </h3>
                                     <p>Your money's at hand with Everyday Checking </p>
-                                    <b>Start today</b><br>
-                                    <!-- <button>Join us now</button> -->
+                                    <b>Start today
+                                     
 
-                                    <div class="addsContainer">
+                                    <div class="addsContainer" id="adds">
                                         
-                                            <div  class="adds">
-                                                <a href="">
-                                                <img src="images/icons/checked icon.png" alt=""> 
+                                            
+                                                <img src="images/PlasticCards.gif" alt="" style="width:100%; background-color: rgb(5, 5, 5,0.4); border: solid 0px rgb(245, 202, 202); height: 150px; padding: 10px;border-radius: 15px;"> 
+                                                <img src="images/PlasticCards.gif" alt="" style="width:100%;background-color: rgb(5, 5, 5,0.4); border: solid 0px rgb(245, 202, 202); height: 150px; padding: 10px; border-radius: 15px;"> 
 
-                                                   
-                                                    </a>
-                                            </div>
                                         
-                                        
-                                        <div class="adds" id="divider"> </div>
-                                        
-                                            <div  class="adds">
-                                                <a href="">
-                                                <img src="images/icons/SavingsImage.png" alt=""> </a>
-                                            </div>
                                         
                                     </div>
+                                </div>
                             </div>
                     </div>
                 
@@ -108,7 +102,12 @@
                     <div class="mySlides fade">
                             <div class="numbertext">3 / 3</div>
                             <img src="images/kidsFuture.jpg">
-                            <div class="text">Caption Three</div>
+                            <div class="text"> 
+                                <h3><b>Consider Trying out Project funding</b> </h3>
+                                    <p>Join today and increase your success chances </p>
+                                    <a href=""><b>Get started now</b></a>
+                            </div>
+                            </div>
                     </div>
                 
                     <!-- Next and previous buttons -->
@@ -118,7 +117,7 @@
                 <br>
                 
                 <!-- The dots/circles -->
-                <div style="text-align:center">
+                <div style="text-align:center; position: relative; margin-top: 25px;">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
@@ -126,28 +125,69 @@
 
                 <!-- Slide show ends here -->
 
-                <div  class="contents">
+                    <div  class="contents">
 
-                    <div style="color: rgb(245, 244, 244); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                        <h1 class="Content-Header-text">
-                            <span style="font-weight: 700; color: white;">Always</span> Bank with Us<br>
-                          </h1>
-                          <p class="u-text u-text-grey-10 u-text-2">
-                              We provide the best banking experience. Implementing regularly recommendations from our customers.
-                          </p>
-                    </div>
+                        <div class="grid1" >
+                            <h1  class="Content-Header-text change" >
+                                <span style="font-weight: bolder; color: rgb(27, 26, 26); ">Always</span> Bank with Us<br>
+                            </h1>
+                            <p class="change" id="smalltext">
+                                We provide the best banking experience. Implementing regularly recommendations from our customers.
+                            </p>
+                        </div>
 
-                    <div class="contentItems">
-                        <i class="fas fa-certificate favIconStyle" ></i>
-                    </div>
-                    <div class="contentItems">
-                        <i class="fas fa-analytics favIconStyle"></i>
-                    </div>
+                        <div class="contentItems">
+                            <i class="fas fa-certificate favIconStyle" ></i>
+
+                            <h3 class="Content-Header-text">Quality in Banking Investments</h3>
+                            <p class="contentItemsText">
+                                Unique market insights, deep industry knowledge,
+                                        creativity, and experience to help grow
+                                        your business.
+                            </p>
+                            <a href="">learn more</a>
+                        </div>
+                        <div class="contentItems">
+                            <i class="fas fa-chart-line favIconStyle"></i>
+
+                            <h3 class="Content-Header-text">Best banking practices</h3>
+                            <p class="contentItemsText">
+                                Robust Implementation of best Banking practices with daily reviews ensuring the continuity of 
+                                of the process in the our business banking activities.
+                            </p>
+                            <a href="">learn more</a>
+                        </div>
+                        
+                        <div class="contentItems">
+                            <i class="fas fa-balance-scale favIconStyle"></i>
+
+                            <h3 class="Content-Header-text">Constant Relationship Weighing</h3>
+                            <p class="contentItemsText">
+                                We take the time to listen and learn about your business growth opportunities, 
+                                challenges, and operations.   </p>
+                            <a href="">learn more</a>
+                        </div>
                     
-                    <div class="contentItems">
-                        <i class="fas fa-certificate favIconStyle"></i> 
                     </div>
-                  
+
+                
+                <div class="products container">
+                    <div class="key container-style" >
+                      <img src="images/key.png" alt="" />
+                      <p class="productContainerText">Access your auto loan easily with our Quick loan system</p>
+                    </div>
+                    <div class="mobile container-style">
+                      <img src="images/key2.png" alt="" />
+                      <p class="productContainerText">Conveniently manage your savings with online an dmobile banking</p>
+                    </div>
+                    <div class="reward container-style">
+                      <img src="images/key.png" alt="" />
+                      <p class="productContainerText">Cash in on a credit card with greate rates nd rewards</p>
+                    </div>
+                    <div class="savings container-style" >
+                      <img src="images/key.png" alt="" />
+                      <p class="productContainerText">Earn 0.87% with our high rate savings account</p>
+                    </div>
                 </div>
 
 

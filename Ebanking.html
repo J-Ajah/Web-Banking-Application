@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top-display"></div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">  <div id="holder"><img src="images/Logoimage.png" alt="">   </div>  </a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Product & Services</a>
+            <a href="Ebanking.html">E-Banking</a>
+            <a href="contact.html">Contact</a>
+            </div>
+            <!-- "menu for toggling" -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Ipad & Desktop navBar starts here -->
+        <div class="Idesknav">
+            <div class="logoDiv">
+
+                <img src="images/Logoimage.png" alt="">
+            </div>
+
+            <div class="navDiv">
+               <ul>
+                <li class="navbar"> <a href="index.html">Home</a> </li>
+                <li class="navbar"><a href="about.html">About</a> </li>
+                <li class="navbar"> <a href="products.html" >Product & Services</a> </li>
+                <li class="navbar"> <a href="Ebanking.html" class="active">E Banking</a> </li>
+                <li class="navbar"> <a href="contact.html">Contact</a> </li>
+               </ul>
+            </div>
+
+            <div id="search">
+                <p><a href=""><i class="fa fa-search  fa-loaded Isize" id="search"></i> </a>
+                </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="EbankingHome"> 
+
+            <div class="ebanking_divs">
+
+                <div class="messageDiv">
+                    <h4 id="message" style="color:white; font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: larger;position: relative; top: 50px;left: 10px;">Perform a Quick transaction with us</h4>
+                </div>
+
+            </div>
+            <div class="ebanking_divs">
+                <div class="form">
+                    <h1>E-Banking</h1>
+                    <div class="formcontainer">
+                    <hr/>
+                    <div class="container">
+                      <label for="uname"><strong>Amount</strong></label>
+                      <input id="inputId" type="text" placeholder="Enter deposit amount" name="uname">
+                    </div>
+                    <button type="submit" onclick="getInputValue();">Deposit</button>
+                    </div>
+                  </div>
+            </div>
+
+        </div>    
+
+
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="#"><i class="fa fa-facebook  move"></i></a>
+                <a href="#"><i class="fa fa-twitter move"></i></a>
+                <a href="#"><i class="fa fa-linkedin move"></i></a>
+                <a href="#"><i class="fa fa-github move"></i></a>
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#">Home</a>
+
+                    <a href="#">News</a>
+
+                    <a href="#">Rates</a>
+
+                    <a href="#">About</a>
+
+                    <a href="#">Faq</a>
+
+                    <a href="#">Contact</a>
+                </p>
+
+                  <div class="Blogo" >
+                    <img src="images/Logoimage.png" alt=""><p class="copyright"> &copy;<b>2020</b> </p>
+                  </div>
+               
+            </div>
+
+        </footer>
+
+
+
+
+        </div>
+
+        <script src="javascript/index.js"></script>
+</body>
+</html>

@@ -1,12 +1,3 @@
-//   let  items = document.querySelector(".searchInput").classList;
-
-//  document.querySelector("#search").addEventListener("click", addClassButton)
-
-//  function addClassButton(){
-//   items.add(".searchInputShow");
-//   alert(items)
-// } 
-
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() { 
@@ -23,7 +14,7 @@ function myFunction() {
   
 
   var slideIndex = 1;
-showSlides(slideIndex);
+ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -52,18 +43,35 @@ function showSlides(n) {
 }
 
 
-// var slideIndex = 0;
-// showSlides();
+var slideIndex = 0;
+showSlides();
 
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 10000); // Change image every 2 seconds
-// }
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+
+
+function getInputValue() { 
+  let inputVal = document.getElementById("inputId").value;
+  // Displaying the value
+  var amt = 0;
+  if(inputVal == ""){
+    // alert("Transaction Unsuccessful. Balance lesser than Amount" + amt)
+     document.querySelector("#message").innerHTML = "Transaction Unsuccessful. Balance lesser than Amount"+amt;
+  }
+
+  else {
+     var input = Number(inputVal) + 0;
+    //  alert("Deposit successful. Your new balance is " + input);
+     document.querySelector("#message").innerHTML = "Deposit successful. Your new balance is Ghc" + input ;
+  }
+}
 

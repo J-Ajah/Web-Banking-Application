@@ -4,6 +4,17 @@
 
   * {box-sizing:border-box;}
 
+  a{
+    text-decoration: none;
+  }
+
+  .active{
+    border-bottom: solid 3px #d71e2b;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    /* box-shadow: 1px 1px 1px rgb(153, 145, 145); */
+  }
+
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -13,7 +24,7 @@ body{
 .wrapper{
     background-color: white;
     width: 100%;
-    height: auto;
+    height: 700px;
     position: relative;
 }
 
@@ -170,16 +181,56 @@ body{
   padding: 8px 12px;
   position: absolute;
   font-family: var(--myfont);
-  top: 50px;
+  top: 10px;
   right: 0;
   bottom: 8px;
   width: 40%;
   text-align: left;
-  height:  auto;
+  height: 400px;
   background-color: rgba(255, 6, 6, 0.6);
   margin-right: 50px;
   border-radius: 10px;
   font-size:13px;
+  padding-bottom: 70vh;
+ box-sizing: border-box;
+}
+
+@media (min-width:200px) and (max-width:700px){
+  .text{
+    height: auto; 
+    font-size: 12px;
+    padding: 10px 10px 0px 10px;
+    
+    
+  }
+  .dot {
+    cursor: pointer;
+    height: 2px;
+    width: 2px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+}
+
+@media (min-width:499px){
+  .text{
+    font-size: 1em;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 2px;
+    width: 2px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 
 }
 
@@ -240,7 +291,9 @@ body{
 .contents{
   width: 100%;
   height: auto;
-  background-color: black;
+  background-image:url(../images/ImageBankingImages.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-items:normal;
   padding: 10px;
   text-align: center;
@@ -248,50 +301,157 @@ body{
 
 .contentItems{
   width:80%;
-  height: 350px;
-  border: solid 1px white;
+  height: 400;
+  border: solid 0px white;
   position: relative;
+  background-color:rgb(24, 23, 23,0.7);
   margin: 50px auto;
-  border-radius: 5px;
+  color: rgb(243, 198, 198);
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  font-size: 1em;
+  font-family: var(--myfont);
+
   
 }
 
 .Content-Header-text{
   font-size: 1.50rem;
+  font-weight: 700;
+  color: rgb(253 253 253);   
+   font-family: var(--myfont);
+   padding: 5px;
+   line-height: 20px;
 }
 
 .favIconStyle{
-  font-size:6em;
-  color: whitesmoke;
+  font-size: 5rem;
+  color: #d71e2b;
   padding-top: 30px;
+
+  
 }
 
 
 /* Slide style ends here */
 
-.text button{
-      background-color: rgba(255, 255, 255, 0.918);
-      padding: 5px;
-      border-radius: 10px;
-      outline-style: none;
-      align-items: center;
-      position: relative;
-      top: 5px;
-      border: 1px saddlebrown;
-      color: black;
-      cursor: pointer;
-      box-shadow: 0px 0.5px 5px rgb(68, 67, 67);
+.contentItemsText{
+  font-weight: 100; 
+  color:  rgb(230, 230, 235); 
+  padding: 0px 1 5px 0px 5px; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" ";
+  line-height: 1.5;
+
 }
+
+.contentItems a{
+  text-decoration: none;
+  color: #d71e2b;
+  font-size: larger;
+  font-weight: bold;
+  position: relative;
+  text-shadow: 1px 1px 2px rgb(61, 59, 59);
+  border: solid 1px rgb(53, 53, 53);
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+} 
+
+.change{
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  text-decoration: dotted;
+  text-shadow: 2px 1px 5px rgb(255, 255, 255);
+}
+
+/* Products container styles starts here */
+
+.products {
+  align-items: center;
+  text-align: center;
+  justify-content: inherit;
+  width: 70%;
+  background-color:  rgb(255, 255, 255,0.1);
+  height: auto;
+  margin: 0 auto;
+  border: solid 0px black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+
+
+.container-style{
+  border: solid 0px red;
+  height: 300px;
+  margin: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 1px 2px 5px rgb(218, 212, 212);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+
+.container img{
+  width: 40%;
+  height: auto;
+}
+
+.productContainerText{
+  font-size: 1.4em;
+  padding:15px;
+  text-indent:inherit;
+}
+
+
+/* EBanking */
+.ebanking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.account-balance {
+  min-height: 30px;
+  width: 300px;
+  border: 1px solid blue;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.deposite-form input {
+  min-height: 30px;
+  width: 150px;
+  border: 1px solid blue;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 .addsContainer{
     display: none;
 }
 
+
 .footer-distributed {
-    background-color: #292c2f;
+    background-color: #191919;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
+    height: 200px;
     bottom:0;
     text-align: left;
     font: normal 16px sans-serif;
@@ -463,6 +623,42 @@ text-decoration: underline;
 }
 
 
+.text{
+  height: 250px;
+  font-size: 1.5em;
+}
+
+
+
+.container-style{
+  border: solid 0px red;
+  height: 350px;
+  margin: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 1px 2px 5px rgb(218, 212, 212);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+
+.productContainerText{
+  font-size: 1.3em;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-indent:inherit;
+}
+/* Contents items starts here */
+
+
+
+
+
+
+
+
+
   }
 
 
@@ -560,10 +756,10 @@ text-decoration: underline;
   
 .addsContainer{
     display:  inline-grid;
-    grid-template-columns: 1fr 10px 1fr;
+    /* grid-template-columns: 1fr 10px 1fr; */
     width: 90%;
     border: solid 0px black;
-    height: auto;
+    height: 150px;
     position: absolute;
     bottom: 0;
     justify-content: inherit;
@@ -572,12 +768,12 @@ text-decoration: underline;
     justify-items:center;
     left: 25px;
     border-radius: 15px 15px 0px 0px;
-    background-color: #f2f2f2;
+    
    
 
 }
 
-#divider{
+/* #divider{
       position: absolute;
       bottom: 0;
       width: 2px;
@@ -585,12 +781,18 @@ text-decoration: underline;
       border: solid 1px black;
       margin-right: 30px;
       margin-bottom: 10px;
-}
+} */
 
-.adds{
+#adds{
     border: solid 0px black;
-    width: 70%;
-    height: 70px;
+    width: 80%;
+    height: auto;
+    border: solid 0px rgb(179, 164, 164);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
     
 }
 
@@ -598,8 +800,206 @@ text-decoration: underline;
     width: 40%;
 }
  
+.contents{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  background-image:url(../images/ImageBankingImages.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-items:normal;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.grid1{
+  grid-column: 1/6;
+  color: rgb(245, 244, 244); 
+  font-family: var(--myfont);
+  width: 70%;
+  margin: 0 auto;
+}
 
-/* Footer starts here */
+.change {
+  font-size: 2.3rem;
+}
+
+#smalltext{
+  font-size: larger;
+}
+
+.products {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-style{
+  border: solid 0px red;
+  height: 330px;
+  margin: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 1px 2px 5px rgb(218, 212, 212);
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.productContainerText{
+  font-size: 1.4em;
+  padding:15px;
+  text-indent:inherit;
+}
+
+.container img{
+  width: 40%;
+  height: auto;
+}
+                      
+
+                        /* About us page for Desktop starts here */
+
+  .contents2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    background-color: #746f6f;
+    /* background-image: url(../images/); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: normal;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+
+/* Products for desktop starts here */
+
+.productsHome{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    background-image: url(../images/clients.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+
+  /* Ebanking styles starts here */
+  .EbankingHome{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+    background-image:url(../images/ImageBankingImages.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .ebanking_divs{
+        width:90%;
+        height: 500px;
+        background-color:rgb(43, 41, 41,0.4);
+        border:solid 1px black;
+        position:relative;
+        top: 50px;
+        margin: 0 auto;
+        border-radius: 10px;
+        
+  }
+
+  .form {
+    border: 5px solid #d71e2b;
+    height: 300px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    background-color: rgb(236, 233, 232);
+
+    }
+      input {
+      width: 100%;
+      padding: 16px 8px;
+      border-radius: 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      outline: none;
+    }
+    input:focus {
+    border: none;
+    }
+    button {
+    background-color: #d71e2b;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    .form h1 {
+    text-align:center;
+    font-size:28px;
+    font-family: var(--myfont);
+    }
+    button:hover {
+    opacity: 0.8;
+    }
+    .formcontainer {
+    text-align: left;
+    margin: 24px 50px 12px;
+    }
+    .container {
+    padding: 16px 0;
+    text-align:left;
+    }
+    span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+    }
+    
+
+    .messageDiv{
+      width: 70%;
+      height: 150px;
+      background-color: #db4242;
+      margin: 0 auto;
+      position:relative;
+      top:200px;
+      border-radius: 200px;
+
+        }
+   
+ }
+  
+  
+
+
+
+
+
+
+
 
 
 
@@ -607,7 +1007,7 @@ text-decoration: underline;
 
 
 
-
+/* Footer starts here */
 
   
   /* Media Queries for footer*/
